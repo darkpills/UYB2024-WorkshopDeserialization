@@ -1,0 +1,167 @@
+body {
+    background-color: #111;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
+pre {
+    text-align: left;
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}
+
+.debug:hover {
+    color: #00ff00;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.retro-container pre {
+    text-align:left;
+    color: #00ff00;
+    /* Neon green text color */
+    background-color: #111;
+    /* Dark background for contrast */
+    padding: 10px;
+    /* Adds some space around the text */
+    border: 2px solid #00ff00;
+    /* Green border to match theme */
+    font-size: 16px;
+    /* Optional: Set a readable font size */
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    /* Neon glow effect */
+    white-space: pre-wrap;
+    /* Ensures text wraps properly */
+    word-wrap: break-word;
+    /* Prevents overflow */
+}
+
+.retro-container {
+    background-color: #222;
+    border: 5px solid #00ff00;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00ff00;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Blinking text */
+.blinking {
+    animation: blink 1s step-end infinite;
+    color: #ffcc00;
+}
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+.btn-submit {
+    background-color: #00ff00;
+    color: black;
+    border: 2px solid #00ff00;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #009900;
+    color: white;
+}
+
+textarea {
+    background-color: #333;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #00cc00;
+}
+
+.submit-feedback {
+    margin-top: 20px;
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+/* Styling <select> element to match retro theme */
+.container select {
+    background-color: #111; /* Dark background */
+    color: #00ff00; /* Neon green text */
+    border: 2px solid #00ff00; /* Neon green border */
+    padding: 10px;
+    font-size: 16px; /* Set readable font size */
+    font-family: 'Courier New', Courier, monospace; /* Retro monospaced font */
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Neon glow effect */
+    border-radius: 5px; /* Slight rounding for the border */
+    outline: none; /* Remove outline on focus */
+    width: 100%; /* Make it responsive */
+    cursor: pointer; /* Change cursor to pointer for interaction */
+}
+
+/* Styling <option> elements */
+.container select option {
+    background-color: #111; /* Dark background for options */
+    color: #00ff00; /* Neon green text */
+    border: none; /* Remove border from options */
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Retro font */
+}
+
+/* Add hover effect to <option> elements */
+.container select option:hover {
+    background-color: #00ff00; /* Neon green background on hover */
+    color: #111; /* Dark text color on hover */
+}
+
+/* Optional: Add focus effect to <select> */
+.container select:focus {
+    border-color: #00cc00; /* Lighter green border when focused */
+    box-shadow: 0 0 10px rgba(0, 204, 0, 0.7); /* Neon glow effect on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Blur effect */
+.blur {
+    filter: blur(5px);
+    transition: filter 1.5s ease;
+}
+
+.blur:hover {
+    filter: blur(0);
+    transition: filter 1s ease;
+}

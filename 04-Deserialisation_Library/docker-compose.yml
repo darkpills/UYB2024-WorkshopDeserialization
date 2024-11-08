@@ -1,0 +1,12 @@
+services:
+  webapp:
+    build:
+      context: ../
+      dockerfile: 04-Deserialisation_Library/Dockerfile
+    ports:
+      - "80:80"
+    develop:
+      watch:
+        - action: sync
+          path: ./code
+          target: /usr/share/nginx/html

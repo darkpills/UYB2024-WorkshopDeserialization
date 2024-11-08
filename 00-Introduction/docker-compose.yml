@@ -1,0 +1,12 @@
+services:
+  webapp:
+    build:
+      context: ../
+      dockerfile: ./00-Introduction/Dockerfile
+    ports:
+      - "80:80"
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /usr/share/nginx/html
