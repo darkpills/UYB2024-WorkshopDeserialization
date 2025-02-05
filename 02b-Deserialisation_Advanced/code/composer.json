@@ -1,0 +1,11 @@
+{
+    "name": "application/shareplay",
+    "description": "Easily share your game state",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Application\\Shareplay\\": "src/"
+        }
+    }
+}
