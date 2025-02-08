@@ -4,11 +4,6 @@ namespace App\Entity;
 
 class Player extends Entity
 {
-    public string $pseudo;
-    protected int $life = 100;
-    protected int $magic = 100;
-    protected $equipment = [];
-    private int $gold = 10;
 
     public function __construct(string $pseudo) {
         parent::__construct($pseudo);
